@@ -43,7 +43,7 @@ good for now. Most importantly, I removed the obstacle that kept me
 from writing for so long.
 
 <i>**Update:** The blog code is now available [on
-GiHub](https://github.com/raek/blog.raek.se).</i>
+GitHub](https://github.com/raek/blog.raek.se).</i>
 
 <i>**Update:** This site now has an Atom feed.</i>
 
