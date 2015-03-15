@@ -42,4 +42,7 @@ that I should really make, like adding feeds, but I believe this is
 good for now. Most importantly, I removed the obstacle that kept me
 from writing for so long.
 
+<i>**Update:** The blog code is now available [on
+GiHub](https://github.com/raek/blog.raek.se).</i>
+
 `# raek`
