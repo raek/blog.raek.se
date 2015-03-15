@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{blog.titlePrefix}}{{blog.title}}</title>
+  <link href="{{site.urlBase}}/atom-feed.xml" rel="self"/>
+  <link href="{{site.urlBase}}/"/>
+  <updated>{{blog.lastUpdated}}T00:00:00Z</updated>
+  <author>
+    <name>Rasmus Svensson</name>
+  </author>
+  <id>{{blog.id}}</id>
+  {{#index.years}}
+  {{#posts}}
+
+  <entry>
+    <title>{{title}}</title>
+    <link href="{{site.urlBase}}/{{path}}/"/>
+    <id>tag:blog.raek.se,{{datePublished}}:{{slug}}</id>
+    <updated>{{datePublished}}T00:00:00Z</updated>
+    <summary>{{summary}}</summary>
+  </entry>
+  {{/posts}}
+  {{/index.years}}
+</feed>

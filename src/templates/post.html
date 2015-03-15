@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>{{blog.titlePrefix}}{{post.title}}</title>
+    <link rel="alternate" href="{{site.urlBase}}/atom-feed.xml" type="application/atom+xml" title="Feed of blog posts (Atom)">
     {{#post.style}}
     <link rel="stylesheet" href="{{site.urlBase}}/css/{{post.style}}.css" type="text/css">
     {{/post.style}}

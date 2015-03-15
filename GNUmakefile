@@ -14,7 +14,8 @@ preview: generate
 .PHONY: generate
 generate: $(posts:%=out/$(SITE)/%/index.html) \
           $(css_files:%=out/$(SITE)/%) \
-          out/$(SITE)/index.html
+          out/$(SITE)/index.html \
+          out/$(SITE)/atom-feed.xml
 
 out/$(SITE)/%/index.html: int/posts/%/post.yaml \
                   src/templates/post.html
@@ -69,6 +70,13 @@ out/$(SITE)/index.html: int/index.yaml \
 	mustache - src/templates/index.html \
 	    < int/index.yaml \
 	    > out/$(SITE)/index.html
+
+out/$(SITE)/atom-feed.xml: int/index.yaml \
+                src/templates/atom-feed.xml
+	mkdir -p $(dir $@)
+	mustache - src/templates/atom-feed.xml \
+	    < int/index.yaml \
+	    > out/$(SITE)/atom-feed.xml
 
 out/$(SITE)/%.css: src/scss/%.scss
 	mkdir -p $(dir $@)
