@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{blog.titlePrefix}}Blog</title>
+    <link rel="stylesheet" href="{{site.urlBase}}/css/base.css" type="text/css">
+  </head>
+  <body>
+    <div class="blog-header">
+      <h1><a href="{{site.urlBase}}/">blog.raek.se</a></h1>
+    </div>
+    <div class="index">
+      {{#index.years}}
+      <h1>{{year}}</h1>
+      {{#posts}}
+      <div class="index-entry">
+        <h2 class="index-entry-title">
+          <a href="{{site.urlBase}}/{{path}}/">{{title}}</a>
+        </h2>
+        <div class="index-entry-date">
+          {{datePublished}}
+        </div>
+        <div class="index-entry-summary">
+          {{summary}}
+        </div>
+      </div>
+      {{/posts}}
+      {{/index.years}}
+    </div>
+  </body>
+</html>

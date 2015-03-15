@@ -1,0 +1,7 @@
+{
+    "slug": "new-blog",
+    "title": "New Blog",
+    "datePublished": "2015-03-15",
+    "style": "academic",
+    "summary": "My blog setup has bothered me for some time. Now I have finally finished the replacement: a bunch of HTML files, generated from Markdown with a few scripts, served statically from Apache."
+}

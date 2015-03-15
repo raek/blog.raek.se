@@ -1,0 +1,11 @@
+@import url("base.css");
+
+pre {
+  margin: 0 2em;
+  text-align: center;
+  overflow: auto;
+  code {
+    display: inline-block;
+    text-align: left;
+  }
+}

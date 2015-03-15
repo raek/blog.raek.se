@@ -1,0 +1,87 @@
+html {
+  //background-color: #eeeeee;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 8em;
+  width: 30em;
+  text-align: justify;
+  font-family: "Georgia", "DejaVu Serif", serif;
+  font-size: 11pt;
+  line-height: 1.35em;
+  color: 0x000000;
+  background-color: #ffffff;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 8em;
+  h1 {
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-body {
+  margin: 8em 0;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 140, 158);
+}
+
+h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+
+pre {
+  margin: 0;
+  margin-left: 2em;
+  overflow: visible;
+  code {
+    text-align: left;
+    color: rgb(0, 70, 79);
+  }
+}
+
+code {
+  font-family: "Inconsolata", "DejaVu Sans Mono", "Monaco", monospace;
+}
+
+a:link, a:visited, a:active {
+  color: rgb(0, 140, 158);
+}
+
+a.footnote, a.footnote-backlink {
+  text-decoration: none;
+}
+
+.index {
+  margin: 8em 0;
+}
+
+.index-entry {
+  margin: 4em 0;
+}
+
+.index-entry-title {
+  text-align: left;
+  a {
+    color: #000;
+  }
+}
+
+.index-entry-date {
+  margin: 1em 0;
+  font-weight: bold;
+}
