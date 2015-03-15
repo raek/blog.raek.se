@@ -45,6 +45,6 @@ from writing for so long.
 <i>**Update:** The blog code is now available [on
 GiHub](https://github.com/raek/blog.raek.se).</i>
 
-<i>**Update:** This site now has an Atom feed..</i>
+<i>**Update:** This site now has an Atom feed.</i>
 
 `# raek`
