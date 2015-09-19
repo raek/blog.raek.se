@@ -16,6 +16,7 @@ generate: $(posts:%=out/$(SITE)/%/index.html) \
           $(css_files:%=out/$(SITE)/%) \
           out/$(SITE)/index.html \
           out/$(SITE)/atom-feed.xml
+	bin/hacks
 
 out/$(SITE)/%/index.html: int/posts/%/post.yaml \
                   src/templates/post.html
