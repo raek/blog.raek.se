@@ -1,3 +1,5 @@
+<i>Parts:</i> <b>1</b> <a href="/2015/09/25/frog-sounds-qrp-kit-2/">2</a>
+
 Recently I became interested in amateur radio. I'm currently studying
 for my license and learning morse code, or "CW" as the radio amateurs
 call it. Since I started from scratch equipment-wise, I wanted to buy
