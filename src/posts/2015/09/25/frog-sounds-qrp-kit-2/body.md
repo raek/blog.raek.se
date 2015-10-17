@@ -1,4 +1,4 @@
-<i>Parts:</i> <a href="/2015/09/19/frog-sounds-qrp-kit/">1</a> <b>2</b>
+<i>Parts:</i> <a href="/2015/09/19/frog-sounds-qrp-kit/">1</a> <b>2</b> <a href="/2015/10/17/frog-sounds-qrp-kit-3/">3</a>
 
 The first block I started to solder was the power supply. Figure 1
 show its schematic.

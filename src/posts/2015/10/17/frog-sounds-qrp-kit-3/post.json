@@ -1,0 +1,7 @@
+{
+    "slug": "frog-sounds-qrp-kit-3",
+    "title": "Building the Frog Sounds QRP Kit 3: Key Circuitry",
+    "datePublished": "2015-10-17",
+    "style": "academic",
+    "summary": "When the power supply was done it felt reasonable to continue with the key circuitry. This post describes the key jack with pull up network, the LED indicator circuit, and the NAND gates that function as a buffer and beeper."
+}

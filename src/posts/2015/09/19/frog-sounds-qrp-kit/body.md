@@ -1,4 +1,4 @@
-<i>Parts:</i> <b>1</b> <a href="/2015/09/25/frog-sounds-qrp-kit-2/">2</a>
+<i>Parts:</i> <b>1</b> <a href="/2015/09/25/frog-sounds-qrp-kit-2/">2</a> <a href="/2015/10/17/frog-sounds-qrp-kit-3/">3</a>
 
 Recently I became interested in amateur radio. I'm currently studying
 for my license and learning morse code, or "CW" as the radio amateurs
