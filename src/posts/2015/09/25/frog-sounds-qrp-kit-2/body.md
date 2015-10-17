@@ -5,6 +5,9 @@ show its schematic.
 
 <div class="figure"><p><a href="files/power_supply_schematic.png"><img src="files/power_supply_schematic_thumbnail.png"></a></p><p>Figure 1. Schematic of the power supply block</p></div>
 
+<i>EDIT 2015-10-17: Renamed diode to `D6` to match schematic included
+in kit. Corrected `C18` value to 100 nF.</i>
+
 ## Block Description
 
 The board has two power domains. The external voltage of 9 to 12 volts
