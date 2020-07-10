@@ -5,11 +5,16 @@ SITE ?= localhost
 posts := $(shell bin/find_posts)
 scss_files := $(shell find src/scss/ -name "*.scss" -printf "%P\n")
 css_files := $(scss_files:.scss=.css)
+upload_destination := $(shell bin/json_query src/sites/$(SITE).json .uploadDestination)
 
 .PHONY: preview
 preview: generate
 	bin/json_query src/sites/$(SITE).json .urlBase
 	cd out/$(SITE); python -m SimpleHTTPServer
+
+.PHONY: upload
+upload: generate
+	rsync --verbose --archive --delete out/$(SITE)/ $(upload_destination)/
 
 .PHONY: generate
 generate: $(posts:%=out/$(SITE)/%/index.html) \
