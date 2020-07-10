@@ -111,9 +111,7 @@ finished! Because there are no radio related parts in it yet, it only
 works as a Morse code practice device. Even then, I had some fun with
 it, as can be seen in the video below.
 
-<iframe id="player" type="text/html" width="440" height="268"
-  src="http://www.youtube.com/embed/can3i6nSGdg?enablejsapi=1&origin=http://blog.raek.se"
-  frameborder="0"></iframe>
+<iframe width="440" height="268" src="https://www.youtube.com/embed/can3i6nSGdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Next time I will either continue with the RF oscillator/mixer or the
 audio amplifier. If you find any inaccuracies in this post, or have
