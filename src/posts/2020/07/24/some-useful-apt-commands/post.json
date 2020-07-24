@@ -1,0 +1,7 @@
+{
+    "slug": "some-useful-apt-commands",
+    "title": "Some useful APT commands",
+    "datePublished": "2020-07-24",
+    "style": "engineer",
+    "summary": "The APT package manager used in the Debian and Ubuntu Linux distros keeps track of installed packages, but also which files they installed. Here are four package management commands I have ended up using regularly."
+}
