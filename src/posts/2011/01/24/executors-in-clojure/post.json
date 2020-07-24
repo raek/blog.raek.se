@@ -1,7 +1,8 @@
 {
-    "slug": "executors-in-clojure",
-    "title": "Executors in Clojure",
     "datePublished": "2011-01-24",
+    "slug": "executors-in-clojure",
+    "path": "2011/01/24/executors-in-clojure",
+    "title": "Executors in Clojure",
     "style": "engineer",
     "summary": "Java has a very useful package called java.util.concurrent, which contains classes and interfaces for tasks, task execution tracking, thread-to-thread communication with blocking queues, locks, semaphores, atomic containers and the Executors Framework.  This blog post will walk you through the concepts of the Executors Framework as seen from Clojure."
 }

@@ -1,7 +1,8 @@
 {
-    "slug": "the-re-functions",
-    "title": "The re- functions",
     "datePublished": "2011-06-17",
+    "slug": "the-re-functions",
+    "path": "2011/06/17/the-re-functions",
+    "title": "The re- functions",
     "style": "engineer",
     "summary": "I recently realized that of the core Clojure regex functions (re-pattern, re-matcher, re-matches, re-groups, re-find, re-seq) I was completely unaware of how re-matcher, re-matches, re-groups were supposed to be used. Their names hint that they are useful for something, but I had never needed to use them. To understand them, I first had to dive into the Javadoc a bit, more specifically the java.util.regex package."
 }

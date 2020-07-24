@@ -14,7 +14,6 @@ for line in sys.stdin:
         line.rstrip(),
         "post.json")
     post = json.load(open(post_json_file, "r"))
-    post["path"] = post["datePublished"].replace("-", "/") + "/" + post["slug"]
     posts.append(post)
 
 posts.sort(

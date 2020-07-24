@@ -1,7 +1,8 @@
 {
-    "slug": "running-cadsoft-eagle-version-6-in-ubuntu-gnulinux",
-    "title": "Running CadSoft Eagle Version 6 in Ubuntu GNU/Linux",
     "datePublished": "2012-01-06",
+    "slug": "running-cadsoft-eagle-version-6-in-ubuntu-gnulinux",
+    "path": "2012/01/06/running-cadsoft-eagle-version-6-in-ubuntu-gnulinux",
+    "title": "Running CadSoft Eagle Version 6 in Ubuntu GNU/Linux",
     "style": "engineer",
     "summary": "CadSoft recently released version 6 of its PCB layout program Eagle. You want to use it in Ubuntu? Here's how to get it working."
 }
