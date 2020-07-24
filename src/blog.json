@@ -2,5 +2,6 @@
     "titlePrefix": "raek: ",
     "title": "Blog",
     "id": "tag:blog.raek.se,2015-03-15:blog-of-raek",
+    "realUrlBase": "https://blog.raek.se",
     "lastUpdated": "2015-03-15"
 }
