@@ -5,7 +5,7 @@
   <link href="{{site.urlBase}}/"/>
   <updated>{{blog.lastUpdated}}T00:00:00Z</updated>
   <author>
-    <name>Rasmus Svensson</name>
+    <name>Rasmus Bondesson</name>
   </author>
   <id>{{blog.id}}</id>
   {{#index.years}}
