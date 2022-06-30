@@ -1,5 +1,5 @@
 The APT package manager used in the Debian and Ubuntu Linux distros
-keeps track of installed packages, but it also which files they
+keeps track of installed packages, but also which files they
 installed. Here are four package management commands I have ended up
 using regularly.
 
