@@ -107,7 +107,7 @@ calling code to detect a failure in the task. A much richer
 abstraction is the [`ExecutionService`] [ExecutionService]. It extends
 the `Executor` interface and provides methods to get a result back
 from a task, submit multiple tasks at once and to gracefully shut it
-down: ﻿`awaitTermination`, `invokeAll`, `invokeAny`, `isShutdown`,
+down: `awaitTermination`, `invokeAll`, `invokeAny`, `isShutdown`,
 `isTerminated`, `shutdown`, `shutdownNow` and `submit`. Since it
 allows tasks to communicate a value back, tasks can be of type
 `Callable`.
