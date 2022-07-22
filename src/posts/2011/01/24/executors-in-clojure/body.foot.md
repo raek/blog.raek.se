@@ -97,8 +97,8 @@ creates a dedicated thread for it and runs the tasks in it:
     boo!
     nil
 
-((This makes the current repl the default output stream for new
-threads.))
+(The `alter-var-root` line makes the current repl the default output
+stream for new threads.)
 
 There are three things that the above code does not address very well:
 it doesn't tell you when the task is done, it does not provide a way
