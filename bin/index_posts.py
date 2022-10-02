@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 
-import os
 import itertools
 import json
+from operator import itemgetter
+from pathlib import Path
 import sys
 
 posts = []
 
 for line in sys.stdin:
-    post_json_file = os.path.join(
-        "src", "posts",
-        line.rstrip(),
-        "post.json")
-    post = json.load(open(post_json_file, "r"))
+    post_json_path = Path("src", "posts", line.rstrip(), "post.json")
+    with post_json_path.open("r", encoding="utf-8") as f:
+        post = json.load(f)
     posts.append(post)
 
-posts.sort(
-    key=lambda post:
-            post["datePublished"],
-    reverse=True)
+posts.sort(key=itemgetter("datePublished"), reverse=True)
+
+def post_year(post):
+    date = post["datePublished"]
+    year = date.split("-")[0]
+    return year
 
 years = []
-for year, posts in itertools.groupby(posts, lambda post: post["datePublished"].split("-")[0]):
+for year, posts in itertools.groupby(posts, post_year):
     years.append({"year": year, "posts": list(posts)})
 
 output = {"years": years}
