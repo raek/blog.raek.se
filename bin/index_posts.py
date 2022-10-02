@@ -12,7 +12,8 @@ for line in sys.stdin:
     post_json_path = Path("src", "posts", line.rstrip(), "post.json")
     with post_json_path.open("r", encoding="utf-8") as f:
         post = json.load(f)
-    posts.append(post)
+    if not post.get("draft", False):
+        posts.append(post)
 
 posts.sort(key=itemgetter("datePublished"), reverse=True)
 
