@@ -3,8 +3,9 @@ export BLOG_DIR=.
 SITE ?= localhost
 
 posts := $(shell bin/find_posts)
-scss_files := $(shell find src/scss/ -name "*.scss" -printf "%P\n")
+scss_files := $(shell find src/scss/ -type f -name "*.scss" -printf "%P\n")
 css_files := $(scss_files:.scss=.css)
+static_files := $(shell find src/static/ -type f -printf "%P\n")
 upload_destination := $(shell bin/json_query src/sites/$(SITE).json .uploadDestination)
 
 .PHONY: preview
@@ -19,6 +20,7 @@ upload: generate
 .PHONY: generate
 generate: $(posts:%=out/$(SITE)/%/index.html) \
           $(css_files:%=out/$(SITE)/%) \
+          $(static_files:%=out/$(SITE)/%) \
           out/$(SITE)/index.html \
           out/$(SITE)/atom-feed.xml
 	bin/hacks
@@ -87,6 +89,10 @@ out/$(SITE)/atom-feed.xml: int/index.yaml \
 out/$(SITE)/%.css: src/scss/%.scss
 	mkdir -p $(dir $@)
 	sass $< $@
+
+out/$(SITE)/%: src/static/%
+	mkdir -p $(dir $@)
+	cp $< $@
 
 .PHONY: clean
 clean:
