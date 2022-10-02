@@ -1,5 +1,3 @@
-export BLOG_DIR=.
-
 SITE ?= localhost
 
 posts := $(shell bin/find_posts)

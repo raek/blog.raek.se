@@ -9,7 +9,6 @@ posts = []
 
 for line in sys.stdin:
     post_json_file = os.path.join(
-        os.environ["BLOG_DIR"],
         "src", "posts",
         line.rstrip(),
         "post.json")

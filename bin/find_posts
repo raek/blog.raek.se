@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 # stdout: a list of post directories, one per line
-# env: uses the BLOG_DIR environment variable
 
-find "$BLOG_DIR/src/posts/" -name post.json -printf "%P\n" | while read -r post_json_file; do
+find "src/posts/" -name post.json -printf "%P\n" | while read -r post_json_file; do
     dirname "$post_json_file"
 done
