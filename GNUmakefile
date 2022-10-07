@@ -9,7 +9,7 @@ upload_destination := $(shell bin/json_query src/sites/$(SITE).json .uploadDesti
 .PHONY: preview
 preview: generate
 	bin/json_query src/sites/$(SITE).json .urlBase
-	cd out/$(SITE); python -m SimpleHTTPServer
+	cd out/$(SITE); python3 -m http.server
 
 .PHONY: upload
 upload: generate
