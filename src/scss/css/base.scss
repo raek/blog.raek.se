@@ -12,6 +12,7 @@ body {
   line-height: 1.35em;
   color: #000000;
   background-color: #ffffff;
+  hyphens: auto;
 }
 
 @media screen and (max-width:510px) {
@@ -61,6 +62,7 @@ pre {
 code {
   font-family: "Inconsolata", "DejaVu Sans Mono", "Monaco", monospace;
   color: rgb(0, 93, 105);
+  hyphens: none;
 }
 
 a:link, a:visited, a:active {
