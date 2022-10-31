@@ -1,0 +1,8 @@
+{
+    "datePublished": "2022-10-31",
+    "slug": "os-integration-files-in-python-packages",
+    "path": "2022/10/31/os-integration-files-in-python-packages",
+    "title": "OS Integration Files in Python Packages",
+    "style": "engineer",
+    "summary": "My go-to method for deploying command line tools I've written is to build Python packages and installing them. This works well for putting the tools on the PATH, but one thing I've been missing is to also include \"OS integration files\" (such as manual pages, .desktop app launchers, and systemd unit files). Recently I learned a way to do it."
+}
