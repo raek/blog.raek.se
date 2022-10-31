@@ -65,6 +65,12 @@ code {
   hyphens: none;
 }
 
+blockquote {
+  margin: 0 2em;
+  font-style: italic;
+  color: rgb(0, 93, 105);
+}
+
 a:link, a:visited, a:active {
   color: rgb(0, 140, 158);
 }
