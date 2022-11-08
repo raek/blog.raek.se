@@ -1,2 +1,2 @@
-sudo apt install make python3 sed ruby markdown sass jq
+sudo apt install make python3 sed ruby markdown jq
 sudo gem install mustache

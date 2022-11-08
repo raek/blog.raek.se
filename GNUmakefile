@@ -1,8 +1,6 @@
 SITE ?= localhost
 
 posts := $(shell bin/find_posts)
-scss_files := $(shell find src/scss/ -type f -name "*.scss" -printf "%P\n")
-css_files := $(scss_files:.scss=.css)
 static_files := $(shell find src/static/ -type f -printf "%P\n")
 upload_destination := $(shell bin/json_query src/sites/$(SITE).json .uploadDestination)
 
@@ -17,7 +15,6 @@ upload: generate
 
 .PHONY: generate
 generate: $(posts:%=out/$(SITE)/%/index.html) \
-          $(css_files:%=out/$(SITE)/%) \
           $(static_files:%=out/$(SITE)/%) \
           out/$(SITE)/index.html \
           out/$(SITE)/atom-feed.xml
@@ -83,10 +80,6 @@ out/$(SITE)/atom-feed.xml: int/index.yaml \
 	mustache - src/templates/atom-feed.xml \
 	    < int/index.yaml \
 	    > out/$(SITE)/atom-feed.xml
-
-out/$(SITE)/%.css: src/scss/%.scss
-	mkdir -p $(dir $@)
-	sass --sourcemap=none $< $@
 
 out/$(SITE)/%: src/static/%
 	mkdir -p $(dir $@)

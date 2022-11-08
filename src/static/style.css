@@ -1,7 +1,26 @@
-$bg: rgb(255, 255, 255);
-$accent: rgb(0, 140, 158);
-$tint: rgb(0, 93, 105);
-$text: rgb(0, 0, 0);
+/* Colors */
+
+body, .blog-header h1 a {
+  color: black;
+}
+
+body {
+  background-color: white;
+}
+
+h1, a:link, a:visited, a:active {
+  color: rgb(0, 140, 158);
+}
+
+.figure img {
+  border-color: rgb(0, 140, 158);
+}
+
+code, blockquote {
+  color: rgb(0, 93, 105);
+}
+
+/* Size and layout */
 
 body {
   margin: 0 auto;
@@ -11,12 +30,10 @@ body {
   font-family: "Georgia", "DejaVu Serif", serif;
   font-size: 16px;
   line-height: 1.35em;
-  color: $text;
-  background-color: $bg;
   hyphens: auto;
 }
 
-@media screen and (max-width:510px) {
+@media screen and (max-width: 510px) {
   body {
     font-size: 14px;
     width: 100%;
@@ -26,18 +43,18 @@ body {
 
 .blog-header {
   text-align: center;
-  h1 {
-    margin: 1em 0;
-    a {
-      color: $text;
-      text-decoration: none;
-    }
-  }
+}
+
+.blog-header h1 {
+  margin: 1em 0;
+}
+
+.blog-header h1 a {
+  text-decoration: none;
 }
 
 h1 {
   text-align: center;
-  color: $accent;
 }
 
 h2, h3, h4, h5, h6 {
@@ -54,30 +71,42 @@ pre {
   margin: 0;
   margin-left: 2em;
   overflow: visible;
-  code {
-    text-align: left;
-  }
 }
 
 code {
   font-family: "Inconsolata", "DejaVu Sans Mono", "Monaco", monospace;
-  color: $tint;
   hyphens: none;
 }
 
 blockquote {
   margin: 0 2em;
   font-style: italic;
-  color: $tint;
 }
 
 a:link, a:visited, a:active {
-  color: $accent;
 }
 
 a.footnote, a.footnote-backlink {
   text-decoration: none;
 }
+
+.figure {
+  margin: 0 2em;
+  text-align: center;
+  overflow: auto;
+}
+
+.figure img {
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+/* Index page specific */
 
 .index-entry {
   margin: 4em 0;
@@ -90,18 +119,4 @@ a.footnote, a.footnote-backlink {
 .index-entry-date {
   margin: 1em 0;
   font-weight: bold;
-}
-
-.figure {
-  margin: 0 2em;
-  text-align: center;
-  overflow: auto;
-  img {
-    border: 1px solid $accent;
-    padding: 3px;
-  }
-}
-
-label {
-  font-size: 0.8em;
 }
