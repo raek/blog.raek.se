@@ -1,4 +1,4 @@
-/* Colors */
+/* Light mode colors */
 
 body, .blog-header h1 a {
   color: black;
@@ -18,6 +18,30 @@ h1, a:link, a:visited, a:active {
 
 code, blockquote {
   color: rgb(0, 93, 105);
+}
+
+/* Dark mode colors */
+
+@media (prefers-color-scheme: dark) {
+  body, .blog-header h1 a {
+    color: white;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  h1, a:link, a:visited, a:active {
+    color: rgb(0, 225, 255);
+  }
+
+  .figure img {
+    border-color: rgb(0, 225, 255);
+  }
+
+  code, blockquote {
+    color: rgb(64, 176, 191);
+  }
 }
 
 /* Size and layout */
