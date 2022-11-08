@@ -3,6 +3,5 @@
     "slug": "haskell-io-in-five-minutes",
     "path": "2012/10/19/haskell-io-in-five-minutes",
     "title": "Haskell I/O in Five Minutes",
-    "style": "academic",
     "summary": "The way you do I/O in Haskell may be radically different from what newcomers are used to, but in fact it follows a few simple rules."
 }

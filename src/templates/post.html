@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{blog.titlePrefix}}{{post.title}}</title>
     <link rel="alternate" href="{{site.urlBase}}/atom-feed.xml" type="application/atom+xml" title="Feed of blog posts (Atom)">
-    {{#post.style}}
-    <link rel="stylesheet" href="{{site.urlBase}}/css/{{post.style}}.css" type="text/css">
-    {{/post.style}}
-    {{^post.style}}
-    <link rel="stylesheet" href="{{site.urlBase}}/css/engineer.css" type="text/css">
-    {{/post.style}}
+    <link rel="stylesheet" href="{{site.urlBase}}/css/style.css" type="text/css">
   </head>
   <body>
     <div class="blog-header">

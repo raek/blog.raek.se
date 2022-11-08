@@ -3,6 +3,5 @@
     "slug": "my-first-quine",
     "path": "2009/07/08/my-first-quine",
     "title": "My First Quine",
-    "style": "engineer",
     "summary": "A self-reproducing program written in Python 3."
 }

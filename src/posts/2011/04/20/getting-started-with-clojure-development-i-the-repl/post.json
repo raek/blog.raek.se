@@ -3,6 +3,5 @@
     "slug": "getting-started-with-clojure-development-i-the-repl",
     "path": "2011/04/20/getting-started-with-clojure-development-i-the-repl",
     "title": "Getting Started with Clojure Development I: The REPL",
-    "style": "engineer",
     "summary": "This is the first post of one my ongoing attempt to write a series of blog posts about how to get started with development in Clojure. This post will cover a beginner's first encounter with the Clojure Read Eval Print Loop."
 }

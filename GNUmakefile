@@ -86,7 +86,7 @@ out/$(SITE)/atom-feed.xml: int/index.yaml \
 
 out/$(SITE)/%.css: src/scss/%.scss
 	mkdir -p $(dir $@)
-	sass $< $@
+	sass --sourcemap=none $< $@
 
 out/$(SITE)/%: src/static/%
 	mkdir -p $(dir $@)
