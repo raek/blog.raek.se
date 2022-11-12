@@ -23,8 +23,9 @@ generate: $(posts:%=out/$(SITE)/%/index.html) \
 out/$(SITE)/%/index.html: int/posts/%/merged_post.json \
                   src/templates/post.html
 	mkdir -p $(dir $@)
-	mustache - src/templates/post.html \
-	    < int/posts/$*/merged_post.json \
+	chevron \
+            src/templates/post.html \
+	    -d int/posts/$*/merged_post.json \
 	    > out/$(SITE)/$*/index.html
 
 int/posts/%/merged_post.json: int/posts/%/body.html \
@@ -69,15 +70,17 @@ int/merged_index.json: int/index.json
 out/$(SITE)/index.html: int/merged_index.json \
                 src/templates/index.html
 	mkdir -p $(dir $@)
-	mustache - src/templates/index.html \
-	    < int/merged_index.json \
+	chevron \
+            src/templates/index.html \
+	    -d int/merged_index.json \
 	    > out/$(SITE)/index.html
 
 out/$(SITE)/atom-feed.xml: int/merged_index.json \
                 src/templates/atom-feed.xml
 	mkdir -p $(dir $@)
-	mustache - src/templates/atom-feed.xml \
-	    < int/merged_index.json \
+	chevron \
+            src/templates/atom-feed.xml \
+	    -d int/merged_index.json \
 	    > out/$(SITE)/atom-feed.xml
 
 out/$(SITE)/%: src/static/%
