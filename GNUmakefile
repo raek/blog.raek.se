@@ -20,14 +20,14 @@ generate: $(posts:%=out/$(SITE)/%/index.html) \
           out/$(SITE)/atom-feed.xml
 	bin/hacks
 
-out/$(SITE)/%/index.html: int/posts/%/post.yaml \
+out/$(SITE)/%/index.html: int/posts/%/merged_post.json \
                   src/templates/post.html
 	mkdir -p $(dir $@)
 	mustache - src/templates/post.html \
-	    < int/posts/$*/post.yaml \
+	    < int/posts/$*/merged_post.json \
 	    > out/$(SITE)/$*/index.html
 
-int/posts/%/post.yaml: int/posts/%/body.html \
+int/posts/%/merged_post.json: int/posts/%/body.html \
                        src/blog.json \
                        src/posts/%/post.json
 	mkdir -p $(dir $@)
@@ -36,7 +36,7 @@ int/posts/%/post.yaml: int/posts/%/body.html \
 	    blog:json:src/blog.json \
 	    post:json:src/posts/$*/post.json \
 	    body:str:int/posts/$*/body.html \
-	    > int/posts/$*/post.yaml
+	    > int/posts/$*/merged_post.json
 
 int/posts/%/body.html: src/posts/%/body.html
 	mkdir -p $(dir $@)
@@ -58,26 +58,26 @@ int/index.json: FORCE
 	mkdir -p $(dir $@)
 	bin/find_posts | bin/index_posts.py > int/index.json
 
-int/index.yaml: int/index.json
+int/merged_index.json: int/index.json
 	mkdir -p $(dir $@)
 	bin/merge_data.py \
 	    site:json:src/sites/$(SITE).json \
 	    blog:json:src/blog.json \
 	    index:json:int/index.json \
-	    > int/index.yaml
+	    > int/merged_index.json
 
-out/$(SITE)/index.html: int/index.yaml \
+out/$(SITE)/index.html: int/merged_index.json \
                 src/templates/index.html
 	mkdir -p $(dir $@)
 	mustache - src/templates/index.html \
-	    < int/index.yaml \
+	    < int/merged_index.json \
 	    > out/$(SITE)/index.html
 
-out/$(SITE)/atom-feed.xml: int/index.yaml \
+out/$(SITE)/atom-feed.xml: int/merged_index.json \
                 src/templates/atom-feed.xml
 	mkdir -p $(dir $@)
 	mustache - src/templates/atom-feed.xml \
-	    < int/index.yaml \
+	    < int/merged_index.json \
 	    > out/$(SITE)/atom-feed.xml
 
 out/$(SITE)/%: src/static/%
