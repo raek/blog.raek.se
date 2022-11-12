@@ -31,11 +31,11 @@ int/posts/%/post.yaml: int/posts/%/body.html \
                        src/blog.json \
                        src/posts/%/post.json
 	mkdir -p $(dir $@)
-	bin/merge_data \
-	    site src/sites/$(SITE).json \
-	    blog src/blog.json \
-	    post src/posts/$*/post.json \
-	    < int/posts/$*/body.html \
+	bin/merge_data.py \
+	    site:json:src/sites/$(SITE).json \
+	    blog:json:src/blog.json \
+	    post:json:src/posts/$*/post.json \
+	    body:str:int/posts/$*/body.html \
 	    > int/posts/$*/post.yaml
 
 int/posts/%/body.html: src/posts/%/body.html
@@ -60,11 +60,10 @@ int/index.json: FORCE
 
 int/index.yaml: int/index.json
 	mkdir -p $(dir $@)
-	bin/merge_data \
-	    site src/sites/$(SITE).json \
-	    blog src/blog.json \
-	    index int/index.json \
-	    < /dev/null \
+	bin/merge_data.py \
+	    site:json:src/sites/$(SITE).json \
+	    blog:json:src/blog.json \
+	    index:json:int/index.json \
 	    > int/index.yaml
 
 out/$(SITE)/index.html: int/index.yaml \
