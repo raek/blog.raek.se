@@ -1,2 +1,2 @@
-sudo apt install make python3 python3-pip sed markdown
+sudo apt install make python3 python3-pip markdown
 sudo pip3 install chevron
