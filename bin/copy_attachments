@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -o nounset
-set -o errexit
-
-find src/posts/ -name files -type d -printf "%P\n" | while read -r files_dir; do
-    mkdir -p out/"$SITE"/"$files_dir"
-    cp -r src/posts/"$files_dir" out/"$SITE"/"$(dirname "$files_dir")"
-done

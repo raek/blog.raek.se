@@ -18,7 +18,7 @@ generate: $(posts:%=out/$(SITE)/%/index.html) \
           $(static_files:%=out/$(SITE)/%) \
           out/$(SITE)/index.html \
           out/$(SITE)/atom-feed.xml
-	bin/copy_attachments
+	bin/copy_attachments.py
 
 out/$(SITE)/%/index.html: int/posts/%/merged_post.json \
                   src/templates/post.html
