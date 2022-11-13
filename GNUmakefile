@@ -89,8 +89,8 @@ out/$(SITE)/%: src/static/%
 
 .PHONY: clean
 clean:
-	rm -r int
-	rm -r out
+	rm -rf int
+	rm -rf out
 
 .PHONY: FORCE
 FORCE:
