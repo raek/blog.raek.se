@@ -1,6 +1,6 @@
 SITE ?= localhost
 
-posts := $(shell bin/find_posts)
+posts := $(shell bin/find_posts.py)
 static_files := $(shell find src/static/ -type f -printf "%P\n")
 upload_destination := $(shell bin/json_query src/sites/$(SITE).json .uploadDestination)
 
@@ -57,7 +57,7 @@ int/posts/%/body.md: src/posts/%/body.foot.md
 
 int/index.json: FORCE
 	mkdir -p $(dir $@)
-	bin/find_posts | bin/index_posts.py > int/index.json
+	bin/find_posts.py | bin/index_posts.py > int/index.json
 
 int/merged_index.json: int/index.json
 	mkdir -p $(dir $@)
