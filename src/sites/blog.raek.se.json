@@ -1,4 +1,4 @@
 {
     "urlBase": "https://blog.raek.se",
-    "uploadDestination": "raek.se:public/blog.raek.se"
+    "uploadDestination": "~/public/blog.raek.se"
 }
