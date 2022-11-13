@@ -2,11 +2,11 @@ SITE ?= localhost
 
 posts := $(shell bin/find_posts.py)
 static_files := $(shell find src/static/ -type f -printf "%P\n")
-upload_destination := $(shell bin/json_query src/sites/$(SITE).json .uploadDestination)
+upload_destination := $(shell bin/json_query.py src/sites/$(SITE).json .uploadDestination)
 
 .PHONY: preview
 preview: generate
-	bin/json_query src/sites/$(SITE).json .urlBase
+	bin/json_query.py src/sites/$(SITE).json .urlBase
 	cd out/$(SITE); python3 -m http.server
 
 .PHONY: upload

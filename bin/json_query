@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-jq --monochrome-output --raw-output "$2" < "$1"
