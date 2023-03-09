@@ -39,6 +39,15 @@ code, blockquote {
     color: rgb(0, 225, 255);
   }
 
+  strong {
+    font-weight: normal;
+    color: rgb(0, 225, 255);
+  }
+
+  li::marker {
+    color: rgb(0, 225, 255);
+  }
+
   .figure {
     color: rgb(0, 225, 255);
   }
