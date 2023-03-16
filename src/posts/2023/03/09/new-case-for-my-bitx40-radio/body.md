@@ -148,3 +148,7 @@ At the moment I'm experimenting with fixing the well known "tuning tick" problem
 of the BITX40. The Raduino needs more power filtering. Otherwise loud clicks are
 heard whenever the frequency is adjusted. Now that I have the extra protoboard I
 decided to redo my previous fix and add the components to the board instead.
+
+## Links
+
+* [Topic on Groups.io for this blog post](https://groups.io/g/BITX20/topic/97590084)
