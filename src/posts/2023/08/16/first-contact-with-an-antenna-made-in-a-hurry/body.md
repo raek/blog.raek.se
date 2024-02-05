@@ -36,7 +36,7 @@ small ferrite beads at the terminal block as a common mode choke. I have no idea
 if those small beads made much difference in the end. Didn't hurt though.
 
 I trimmed the antenna to make it resonant at 145 MHz by cutting and bending the
-ends of the diple legs. I used my NanoVNA (on of my favorite tools!) to measure
+ends of the diple legs. I used my NanoVNA (one of my favorite tools!) to measure
 the antenna impedance and SWR. It was very satisfying and I was happy to see
 that I got good SWR on the whole 2m band.
 
