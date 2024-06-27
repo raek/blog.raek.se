@@ -1,7 +1,7 @@
 <i>Parts:</i> <b>1</b> <a href="/2023/06/26/finishing-the-bitx40-case/">2</a>
 
 My [BITX40][BITX40] needs a proper case. It's an amateur radio transceiver kit
-for the 40 meter band by Ashar Farhan VU2ESE. I originally tested the kit by
+for the 40 meter band by Ashhar Farhan VU2ESE. I originally tested the kit by
 mounting it to an MDF board. It's not very ergonomic nor very portable.
 
 [BITX40]: https://www.hfsignals.com/index.php/bitx40/ "BITX40 Website"
