@@ -1,6 +1,6 @@
 {
-    "titlePrefix": "raek: ",
     "title": "Blog",
+    "titleSuffix": " | raek's blog",
     "id": "tag:blog.raek.se,2015-03-15:blog-of-raek",
     "realUrlBase": "https://blog.raek.se",
     "lastUpdated": "2022-07-21"
