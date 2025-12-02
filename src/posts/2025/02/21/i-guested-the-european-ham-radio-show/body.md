@@ -13,7 +13,7 @@ given the opportunity to join one of their shows.
 
 Have a watch if you want to!
 
-* [TEHRS Show #084: Ham Radio DIY – With Rasmus SA5JRS](https://www.youtube.com/live/rWDfAOuJDFw)
+* [TEHRS Show #084: Ham Radio DIY – With Rasmus SA5RJS](https://www.youtube.com/live/rWDfAOuJDFw)
 
 ## Where to Find The European Ham Radio Show
 
